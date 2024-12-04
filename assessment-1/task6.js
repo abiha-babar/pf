@@ -13,8 +13,9 @@ console.log(exampleUnary2);
 console.log("Binary Example ");
 a=2;
 b=2;
-if (a = b);
+if (a = b)
 {
+    x = 10;
     console.log("Binary operator a = b ");
 }
 

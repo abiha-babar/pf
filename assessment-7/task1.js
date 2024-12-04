@@ -12,29 +12,19 @@ c) Use a nested loop to display the map (see output example)
 
 X and Y labels should be displayed
 Treasurer Location should be marked with an 'X'
-Blank Coordinate should be marked with a '-'
-d) Use a switch statement within a while loop to display Menu options:
+Blank Coordinate should be marked with a '-'*/
 
-Update treasurer coordinates (row/column)
-Shift X left or right
-Shift X up or down
-Exit Program
-e) If 1 is selected
+const prompt = require ("prompt-sync")();
 
-Request row and column coordinate information
-Validate input with an error loop (similar to step b)
-Display the updated map and menu option
-f) If 2 is selected
+let mapSizeX = parseInt(prompt("Enter the number of rows ::"));
+let mapSizeY = parseInt(prompt("Enter the number of columns :: "));
 
-Request a (-/+) horizontal offset. Negative right, Positive Left
-Validate proposed location with an error loop. If location cannot exist on the current map, output and error and repeat request
-Display the updated map and menu
-g) If 3 is selected
-
-Request a (-/+) Vertical offset. Negative up, Positive down
-Validate proposed location with an error loop. If location cannot exist on the current map, output and error and repeat request
-Display the updated map and menu
-h) If 4 is selected
-
-Exit the menu while loop and output 'Exiting Program'
-*/
+if(mapSizeX <= 5 && mapSizeY <= 9)
+{
+    console.log("Validation passed.");
+}
+else{
+    console.log("Validation Failed.Enter the number between 5 and 9.")
+    let mapSizeX = parseInt(prompt("Enter the number of rows ::"));
+    let mapSizeY = parseInt(prompt("Enter the number of columns :: ")); 
+}
